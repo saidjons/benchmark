@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => '__root__',
+        'pretty_version' => '1.0.0+no-version-set',
+        'version' => '1.0.0.0',
+        'reference' => NULL,
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        '__root__' => array(
+            'pretty_version' => '1.0.0+no-version-set',
+            'version' => '1.0.0.0',
+            'reference' => NULL,
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'easyswoole/mysqli' => array(
+            'pretty_version' => '3.0.2',
+            'version' => '3.0.2.0',
+            'reference' => '82af0bf1f5d515bb4b552244f3b89e68eae8c7c3',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../easyswoole/mysqli',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'easyswoole/spl' => array(
+            'pretty_version' => '1.4.1',
+            'version' => '1.4.1.0',
+            'reference' => '3d02bceaf1031a78f959d41dab04e37121f9c58c',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../easyswoole/spl',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

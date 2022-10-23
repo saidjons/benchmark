@@ -1,0 +1,14 @@
+mark {
+	outline: 1px dotted gray!important;
+	background-color: #303030!important;
+	padding: 0.1em!important;
+	color: beige!important;
+}
+
+.ui.label>pre{
+	display: inline-block;
+	margin: 0;
+	white-space: pre-line;
+	overflow-wrap: break-word;
+	max-width: 500px;
+}

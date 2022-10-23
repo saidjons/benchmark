@@ -1,0 +1,34 @@
+{
+	"name" : "phpmv/ubiquity-debug",
+	"description" : "Debugger for Ubiquity framework",
+	"type" : "extension",
+	"keywords" : [
+		"php",
+		"framework",
+		"mvc",
+		"tools",
+		"debug",
+		"php-framework"
+	],
+	"require" : {
+		"php" : ">=7.4",
+		"prismjs/prism": "^1.23"
+	},
+	"license" : "Apache-2.0",
+	"authors" : [{
+			"name" : "Jean-Christophe HERON",
+			"email" : "myaddressmail@gmail.com",
+			"role" : "Lead developer"
+		}
+	],
+	"autoload" : {
+		"psr-4" : {
+			"Ubiquity\\" : "src/Ubiquity/"
+		}
+	},
+	"extra" : {
+		"branch-alias" : {
+			"dev-master" : "1.0.x-dev"
+		}
+	}
+}

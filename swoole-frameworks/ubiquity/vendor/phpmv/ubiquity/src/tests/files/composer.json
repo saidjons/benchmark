@@ -1,0 +1,30 @@
+{
+	"require": {
+		"php": "^7.4",
+		"twig\/twig": "^3.0",
+		"phpmv\/ubiquity-annotations": "dev-main",
+		"phpmv\/php-mv-ui": "dev-master",
+		"codeception/c3": "2.*",
+		"codeception/codeception": "^4.0",
+		"codeception/lib-innerbrowser": "^1.5",
+		"codeception/module-webdriver": "^1.4",
+		"codeception/module-asserts": "^1.3",
+		"symfony/http-kernel": "^5.3",
+		"phpmv/ubiquity-codeception": "1.0.x-dev",
+		"phpmv/ubiquity-mysqli": "dev-master"
+	},
+	"require-dev": {
+		"monolog\/monolog": "^2.0",
+		"czproject\/git-php" : "^3.13",
+		"phpmv\/ubiquity-webtools": "dev-master",
+		"phpmv\/ubiquity-dev":"dev-master"
+	},
+	"autoload": {
+		"psr-4": {
+			"": "app\/",
+			"Ubiquity\\": "Ubiquity/"
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}

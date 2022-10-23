@@ -1,0 +1,17 @@
+{
+    "name": "saidjon/easyswoole",
+    "autoload": {
+        "psr-4": {
+            "Saidjon\\Easyswoole\\": "src/",
+            "App\\": "App/"
+        }
+    },
+    "authors": [
+        {
+            "name": "saidjon"
+        }
+    ],
+    "require": {
+        "easyswoole/easyswoole": "3.5.x"
+    }
+}

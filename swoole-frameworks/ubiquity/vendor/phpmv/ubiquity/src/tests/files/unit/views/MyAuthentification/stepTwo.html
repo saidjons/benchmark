@@ -1,0 +1,28 @@
+{% block _before %}
+<p></p>
+{% endblock %}
+{% block _message %}
+{{ _message | raw }}
+{% endblock %}
+{% block _form %}
+<form class="ui form" action="{{submitURL}}" method="post" name="frm-valid-code" id="frm-valid-code" data-target="{{bodySelector}}">
+	<div class="field">
+		<label for="code">Code</label>
+		{% if prefix %}
+			<div class="ui labeled input">
+				<div class="ui label">{{prefix}}</div>
+				<input type="text" placeholder="Enter a code" name="code" id="code" value="{{ app.getSession().get('2FA-infos')['code'] }}">
+			</div>
+		{% else %}
+			<input type="text" placeholder="Enter a code" name="code" id="code">
+		{% endif %}
+	</div>
+<button type="submit" class="ui submit button _validate2FA">Validate code</button>
+</form>
+{% endblock %}
+{% block _after %}
+<div class="ui basic segment" id="two-step-response"></div>
+{% endblock %}
+{% block _script %}
+	{{ script_foot|raw }}
+{% endblock %}
